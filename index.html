@@ -1,159 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="Author info ...">
-	<title>Title ...</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Author info ...">
+  <title>Title ...</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-	<style type="text/css">
-		div.hero_banner_img {
-			float: left;
-			background: url("resources/hero-banner.png");
-			background-repeat: no-repeat;
-			background-size: contain;
-			width: 512px;
-			height: 512px;
-			max-width: 100%;
-			max-height: 100%;
-		}
+  <style type="text/css">
+    div.hero_banner_img {
+      float: left;
+      background: url("resources/hero-banner.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 512px;
+      height: 512px;
+      max-width: 100%;
+      max-height: 100%;
+    }
 
-		div.hero_banner {
-			background: rgb(101,186,207);
-			background: linear-gradient(90deg, rgba(101,186,207,1) 0%, rgba(162,158,195,1) 50%, rgba(248,210,189,1) 100%); 
-		}
+    div.hero_banner {
+      background: rgb(101,186,207);
+      background: linear-gradient(90deg, rgba(101,186,207,1) 0%, rgba(162,158,195,1) 50%, rgba(248,210,189,1) 100%); 
+    }
 
-		.hero_title {
-			font-weight: 600;
-			text-shadow: 3px 3px rgba(100, 100, 100, 0.3);
-		}
+    .hero_title {
+      font-weight: 600;
+      text-shadow: 3px 3px rgba(100, 100, 100, 0.3);
+    }
 
-		div.hero_img {
-			background-repeat: no-repeat, no-repeat;
-			background-size: contain;
-			background-position: center;
-		}
+    div.hero_img {
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
 
-		div.hero_01_img {
-			background-image: url("resources/Hero_01.png");
-		}
+    div.hero_01_img {
+      background-image: url("resources/Hero_01.png");
+    }
 
-		div.hero_02_img {
-			background-image: url("resources/Hero_02.png");
-		}
+    div.hero_02_img {
+      background-image: url("resources/Hero_02.png");
+    }
 
-		div.hero_03_img {
-			background-image: url("resources/Hero_03.png");
-		}
+    div.hero_03_img {
+      background-image: url("resources/Hero_03.png");
+    }
 
-		div.hero_04_img {
-			background-image: url("resources/Hero_04.png");
-		}
+    div.hero_04_img {
+      background-image: url("resources/Hero_04.png");
+    }
 
-		.heart {
-			color: red;
-		}
+    .heart {
+      color: red;
+    }
 
-		.nav-item-img {
-			width: 32px;
-			height: 32px;
-		}
+    .nav-item-img {
+      width: 32px;
+      height: 32px;
+    }
 
-		.footer_item_img {
-			margin-bottom: 3px;
-			width: 16px;
-			height: 16px;
-		}
+    .footer_item_img {
+      margin-bottom: 3px;
+      width: 16px;
+      height: 16px;
+    }
     </style>
 
-	<!-- Styles ported from https://getbootstrap.com/docs/5.3/examples/product/product.css -->
-	<style type="text/css">
-		.container {
-		  max-width: 960px;
-		}
+  <!-- Styles ported from https://getbootstrap.com/docs/5.3/examples/product/product.css -->
+  <style type="text/css">
+    .container {
+      max-width: 960px;
+    }
 
-		.icon-link > .bi {
-		  width: .75em;
-		  height: .75em;
-		}
+    .icon-link > .bi {
+      width: .75em;
+      height: .75em;
+    }
 
-		/*
-		 * Custom translucent site header
-		 */
+    /*
+     * Custom translucent site header
+     */
 
-		.site-header {
-		  background-color: rgba(0, 0, 0, .85);
-		  -webkit-backdrop-filter: saturate(180%) blur(20px);
-		  backdrop-filter: saturate(180%) blur(20px);
-		}
-		.site-header a {
-		  color: #8e8e8e;
-		  transition: color .15s ease-in-out;
-		}
-		.site-header a:hover {
-		  color: #fff;
-		  text-decoration: none;
-		}
+    .site-header {
+      background-color: rgba(0, 0, 0, .85);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+    .site-header a {
+      color: #8e8e8e;
+      transition: color .15s ease-in-out;
+    }
+    .site-header a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
 
-		/*
-		 * Dummy devices (replace them with your own or something else entirely!)
-		 */
+    /*
+     * Dummy devices (replace them with your own or something else entirely!)
+     */
 
-		.product-device {
-		  position: absolute;
-		  right: 10%;
-		  bottom: -30%;
-		  width: 300px;
-		  height: 540px;
-		  background-color: #333;
-		  border-radius: 21px;
-		  transform: rotate(30deg);
-		}
+    .product-device {
+      position: absolute;
+      right: 10%;
+      bottom: -30%;
+      width: 300px;
+      height: 540px;
+      background-color: #333;
+      border-radius: 21px;
+      transform: rotate(30deg);
+    }
 
-		.product-device::before {
-		  position: absolute;
-		  top: 10%;
-		  right: 10px;
-		  bottom: 10%;
-		  left: 10px;
-		  content: "";
-		  background-color: rgba(255, 255, 255, .1);
-		  border-radius: 5px;
-		}
+    .product-device::before {
+      position: absolute;
+      top: 10%;
+      right: 10px;
+      bottom: 10%;
+      left: 10px;
+      content: "";
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 5px;
+    }
 
-		.product-device-2 {
-		  top: -25%;
-		  right: auto;
-		  bottom: 0;
-		  left: 5%;
-		  background-color: #e5e5e5;
-		}
+    .product-device-2 {
+      top: -25%;
+      right: auto;
+      bottom: 0;
+      left: 5%;
+      background-color: #e5e5e5;
+    }
 
 
-		/*
-		 * Extra utilities
-		 */
+    /*
+     * Extra utilities
+     */
 
-		.flex-equal > * {
-		  flex: 1;
-		}
-		@media (min-width: 768px) {
-		  .flex-md-equal > * {
-		    flex: 1;
-		  }
-		}
+    .flex-equal > * {
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .flex-md-equal > * {
+        flex: 1;
+      }
+    }
     </style>
 </head>
 <body>
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
   <div class="container">
-  	<a class="navbar-brand d-md-none" href="#"> <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#aperture"></use></svg>
+    <a class="navbar-brand d-md-none" href="#"> <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#aperture"></use></svg>
 IndoorEdit
 </a>
-  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div id="offcanvas" class="offcanvas offcanvas-end">
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-between">
@@ -169,162 +169,172 @@ IndoorEdit
 <!-- MAIN -->
 <main>
 <!-- Hero Banner -->
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary hero_banner_container hero_banner">
-    <div class="mx-auto hero_banner_img"></div>
-    <div class="col-md-7 p-lg-5 mx-auto my-5">
-      <h1 class="display-1 fw-bold hero_title">IndoorEdit</h1>
-      <h2 class="display-4 fw-light">Location-based Alerts, Reminders, and Actions</h2>
-      <h3 class="fw-normal text-muted mb-3">Never forget a thing when you are on the move</h3>
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+  <h1 class="display-4 fw-bold">Create and edit detailed indoor maps like a pro.</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Available on Mac&reg; and iPad&reg;</p>
+
+  </div>
+  <div class="overflow-hidden" style="max-height: 50vh;">
+    <div class="container px-5">
+      <img src="resources/PosterScreenshot-MacOS-Light.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="1200" height="675" loading="lazy">
+      <p class="lead mb-4">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah...</p>
+    </div>
+  </div>
+  
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button> -->
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <a href="https://apps.apple.com/us/app/home-camp/id6476225240" target="_blank" rel="noopener noreferrer">
-        	<img alt="Download on the Apple App Store" src="https://digitopoly.files.wordpress.com/2016/06/app-store-logo.png" width="200"></img>
+          <img alt="Download on the Apple App Store" src="https://digitopoly.files.wordpress.com/2016/06/app-store-logo.png" width="200"></img>
         </a>
       </div>
     </div>
 </div>
+
 <!-- Row -->
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="body-section-features">
-	<div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 py-3">
-			<h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_01_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
-	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 p-3">
-			<h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-dark shadow-sm mx-auto hero_img hero_02_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
+  <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_01_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto hero_img hero_02_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
 </div>
 <!-- Row -->
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 p-3">
-			<h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-dark shadow-sm mx-auto hero_img hero_03_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
-	<div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 py-3">
-			<h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_04_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
+  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto hero_img hero_03_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_04_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
 </div>
 <!-- Row -->
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 p-3"> <h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
-	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-		<div class="my-3 py-3">
-			<h2 class="display-5">Another headline</h2>
-			<p class="lead">And an even wittier subheading.</p>
-		</div>
-		<div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-	</div>
+  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3"> <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Another headline</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
 </div>
 <hr/>
 <!-- SPECIFICATIONS -->
 <div class="container py-4" id="body-section-specifications">
-	<h2 class="display-5">Tech Specs</h2>
-	<br/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Operating Systems
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li>macOS 14 (Sonoma) or later versions</li>
-				<li>iPadOS 17 or later versions</li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Conforming Standards
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li><a href="https://register.apple.com/resources/imdf/">Indoor Mapping Data Format</a></li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Import formats
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li>File</li>
-				<li>GeoJSON (IMDF bundles in .bundle extension)</li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Export formats
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li>File</li>
-				<li>GeoJSON (IMDF bundles in both .bundle and .zip formats)</li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Input devices
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li>Keyboard and mouse</li>
-				<li>Apple Pencil&reg; on iPad</li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md">
-			<p class="h4">
-				Languages
-			</p>
-		</div>
-		<div class="col-12 col-md">
-			<ul class="text-small">
-				<li>English</li>
-				<li>French (Canadian)</li>
-			</ul>
-		</div>
-	</div>
-	<hr/>
-	<div class="row">
-		<div class="col-12 col-md text-muted">
-			macOS, iPadOS, and Apple Pencil are registered trademarks of Apple Inc.
-		</div>
-	</div>
+  <h2 class="display-5">Tech Specs</h2>
+  <br/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Operating Systems
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>macOS 14 (Sonoma) or later versions</li>
+        <li>iPadOS 17 or later versions</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Conforming Standards
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li><a href="https://register.apple.com/resources/imdf/">Indoor Mapping Data Format</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Import formats
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>File</li>
+        <li>GeoJSON (IMDF bundles in .bundle extension)</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Export formats
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>File</li>
+        <li>GeoJSON (IMDF bundles in both .bundle and .zip formats)</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Input devices
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>Keyboard and mouse</li>
+        <li>Apple Pencil&reg; on iPad</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        Languages
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>English</li>
+        <li>French (Canadian)</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-12 col-md text-muted">
+      Mac, iPad, macOS, iPadOS, and Apple Pencil are registered trademarks of Apple Inc.
+    </div>
+  </div>
 </div>
 </main>
 
@@ -379,9 +389,9 @@ IndoorEdit
 <!-- FOOTER -->
 <footer class="container py-5">
 <div class="row">
-	<div class="col-12 col-md">
-		<p>© 2025 Forwarday Inc. · <a class="link-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></p> 
-	</div>
+  <div class="col-12 col-md">
+    <p>© 2025 Forwarday Inc. · <a class="link-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></p> 
+  </div>
 </div>
 </footer>
 
