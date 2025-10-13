@@ -49,7 +49,18 @@
     }
 
     div.hero_03_img {
-      background-image: url("resources/Hero_03.png");
+      background: rgb(101,186,207);
+      background: linear-gradient(90deg, rgba(101,186,207,1) 0%, rgba(162,158,195,1) 50%, rgba(248,210,189,1) 100%); 
+    }
+
+    div.hero_03_img p {
+      background: #959595;
+      background: linear-gradient(to right, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 200px;
     }
 
     div.hero_04_img {
@@ -217,10 +228,12 @@ IndoorEdit
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
   <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
+      <h2 class="display-5">Indoor Mapping Data Format</h2>
+      <p class="lead">Comprehensive and industry-leading indoor data modeling format.</p>
     </div>
-    <div class="bg-dark shadow-sm mx-auto hero_img hero_03_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    <div class="bg-dark shadow-sm mx-auto hero_img hero_03_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <p>IMDF</p>
+    </div>
   </div>
   <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 py-3">
@@ -319,8 +332,21 @@ IndoorEdit
   </div>
   <hr/>
   <div class="row">
+    <div class="col-12 col-md">
+      <p class="h4">
+        iCloud&reg;
+      </p>
+    </div>
+    <div class="col-12 col-md">
+      <ul class="text-small">
+        <li>Supports backing up files on iCloud</li>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
     <div class="col-12 col-md text-muted">
-      Mac, iPad, macOS, iPadOS, and Apple Pencil are registered trademarks of Apple Inc.
+      Mac, iPad, macOS, iPadOS, Apple Pencil, and iCloud are registered trademarks of Apple Inc.
     </div>
   </div>
 </div>
