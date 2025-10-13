@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Author info ...">
+	<title>Title ...</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<style type="text/css">
+		div.hero_banner_img {
+			float: left;
+			background: url("resources/hero-banner.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 512px;
+			height: 512px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		div.hero_banner {
+			background: rgb(101,186,207);
+			background: linear-gradient(90deg, rgba(101,186,207,1) 0%, rgba(162,158,195,1) 50%, rgba(248,210,189,1) 100%); 
+		}
+
+		.hero_title {
+			font-weight: 600;
+			text-shadow: 3px 3px rgba(100, 100, 100, 0.3);
+		}
+
+		div.hero_img {
+			background-repeat: no-repeat, no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+
+		div.hero_01_img {
+			background-image: url("resources/Hero_01.png");
+		}
+
+		div.hero_02_img {
+			background-image: url("resources/Hero_02.png");
+		}
+
+		div.hero_03_img {
+			background-image: url("resources/Hero_03.png");
+		}
+
+		div.hero_04_img {
+			background-image: url("resources/Hero_04.png");
+		}
+
+		.heart {
+			color: red;
+		}
+
+		.nav-item-img {
+			width: 32px;
+			height: 32px;
+		}
+
+		.footer_item_img {
+			margin-bottom: 3px;
+			width: 16px;
+			height: 16px;
+		}
+    </style>
+
+	<!-- Styles ported from https://getbootstrap.com/docs/5.3/examples/product/product.css -->
+	<style type="text/css">
+		.container {
+		  max-width: 960px;
+		}
+
+		.icon-link > .bi {
+		  width: .75em;
+		  height: .75em;
+		}
+
+		/*
+		 * Custom translucent site header
+		 */
+
+		.site-header {
+		  background-color: rgba(0, 0, 0, .85);
+		  -webkit-backdrop-filter: saturate(180%) blur(20px);
+		  backdrop-filter: saturate(180%) blur(20px);
+		}
+		.site-header a {
+		  color: #8e8e8e;
+		  transition: color .15s ease-in-out;
+		}
+		.site-header a:hover {
+		  color: #fff;
+		  text-decoration: none;
+		}
+
+		/*
+		 * Dummy devices (replace them with your own or something else entirely!)
+		 */
+
+		.product-device {
+		  position: absolute;
+		  right: 10%;
+		  bottom: -30%;
+		  width: 300px;
+		  height: 540px;
+		  background-color: #333;
+		  border-radius: 21px;
+		  transform: rotate(30deg);
+		}
+
+		.product-device::before {
+		  position: absolute;
+		  top: 10%;
+		  right: 10px;
+		  bottom: 10%;
+		  left: 10px;
+		  content: "";
+		  background-color: rgba(255, 255, 255, .1);
+		  border-radius: 5px;
+		}
+
+		.product-device-2 {
+		  top: -25%;
+		  right: auto;
+		  bottom: 0;
+		  left: 5%;
+		  background-color: #e5e5e5;
+		}
+
+
+		/*
+		 * Extra utilities
+		 */
+
+		.flex-equal > * {
+		  flex: 1;
+		}
+		@media (min-width: 768px) {
+		  .flex-md-equal > * {
+		    flex: 1;
+		  }
+		}
+    </style>
+</head>
+<body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+  <div class="container">
+  	<a class="navbar-brand d-md-none" href="#"> <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#aperture"></use></svg>
+IndoorEdit
+</a>
+  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div id="offcanvas" class="offcanvas offcanvas-end">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="https://apps.apple.com/us/app/home-camp/id6476225240" target="_blank" rel="noopener noreferrer">Download</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#body-section-features">Features</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#body-section-specifications">Tech Specs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+<!-- Hero Banner -->
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary hero_banner_container hero_banner">
+    <div class="mx-auto hero_banner_img"></div>
+    <div class="col-md-7 p-lg-5 mx-auto my-5">
+      <h1 class="display-1 fw-bold hero_title">IndoorEdit</h1>
+      <h2 class="display-4 fw-light">Location-based Alerts, Reminders, and Actions</h2>
+      <h3 class="fw-normal text-muted mb-3">Never forget a thing when you are on the move</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a href="https://apps.apple.com/us/app/home-camp/id6476225240" target="_blank" rel="noopener noreferrer">
+        	<img alt="Download on the Apple App Store" src="https://digitopoly.files.wordpress.com/2016/06/app-store-logo.png" width="200"></img>
+        </a>
+      </div>
+    </div>
+</div>
+<!-- Row -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="body-section-features">
+	<div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 py-3">
+			<h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_01_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 p-3">
+			<h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-dark shadow-sm mx-auto hero_img hero_02_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+</div>
+<!-- Row -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 p-3">
+			<h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-dark shadow-sm mx-auto hero_img hero_03_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+	<div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 py-3">
+			<h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-body-tertiary shadow-sm mx-auto hero_img hero_04_img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+</div>
+<!-- Row -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 p-3"> <h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+	<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		<div class="my-3 py-3">
+			<h2 class="display-5">Another headline</h2>
+			<p class="lead">And an even wittier subheading.</p>
+		</div>
+		<div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+	</div>
+</div>
+<hr/>
+<!-- SPECIFICATIONS -->
+<div class="container py-4" id="body-section-specifications">
+	<h2 class="display-5">Tech Specs</h2>
+	<br/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Operating Systems
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li>macOS 14 (Sonoma) or later versions</li>
+				<li>iPadOS 17 or later versions</li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Conforming Standards
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li><a href="https://register.apple.com/resources/imdf/">Indoor Mapping Data Format</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Import formats
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li>File</li>
+				<li>GeoJSON (IMDF bundles in .bundle extension)</li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Export formats
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li>File</li>
+				<li>GeoJSON (IMDF bundles in both .bundle and .zip formats)</li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Input devices
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li>Keyboard and mouse</li>
+				<li>Apple Pencil&reg; on iPad</li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md">
+			<p class="h4">
+				Languages
+			</p>
+		</div>
+		<div class="col-12 col-md">
+			<ul class="text-small">
+				<li>English</li>
+				<li>French (Canadian)</li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-12 col-md text-muted">
+			macOS, iPadOS, and Apple Pencil are registered trademarks of Apple Inc.
+		</div>
+	</div>
+</div>
+</main>
+
+<!-- Privacy Modal -->
+<div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="privacyPolicyModalLabel">Privacy Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="h5">Home Camp&#8482; Privacy Policy</p>
+
+        <p>This privacy policy applies to all information collected or submitted on <i>Home Camp&#8482;</i>, hereby simply referred to as "the app".</p>
+
+        <p class="h5">Information We Collect</p>
+
+        <p>
+          The app collects anonymous analytics only through Apple's default analytics services, and this information is only used to aid in future product improvements. Users can opt out of this data collection by opening the <b>Settings</b> app on their device, navigating to <b>Privacy & Security > Analytics & Improvements</b>, and turning off <b>Share iPhone Analytics</b>.
+        </p>
+
+        <p>
+          No other forms of analytics or data collection other than Apple's default analytics services are used.
+        </p>
+
+        <p class="h5">Information Usage</p>
+
+        <p>
+          The app relies on iOS's Location Services for real-time location-based updates. Location Services is only used for the
+          intended functionalities, and is only available if the user grants
+          the app the necessary permission. Users can change the permission at anytime by opening the <b>Settings</b> app on their device, navigating to <b>Privacy & Security</b>, and change the permission under <b>Location Services</b> accordingly.
+        </p>
+
+        <p class="h5">Security</p>
+
+        <p>
+          All data from users' input stay on their devices only, and in encrypted form that is offered automatically through Apple's standard encryption and data protection methodologies on iOS. You can learn more about that <a href="https://support.apple.com/en-ca/guide/security/sece3bee0835/web" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+
+        <p class="h5">Your Consent</p>
+
+        <p>By using <i>Home Camp&#8482</i>, you consent to this privacy policy.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="container py-5">
+<div class="row">
+	<div class="col-12 col-md">
+		<p>© 2025 Forwarday Inc. · <a class="link-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></p> 
+	</div>
+</div>
+</footer>
+
+<!-- SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
